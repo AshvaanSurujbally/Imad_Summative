@@ -1,6 +1,6 @@
 # Music PlaylistApp 
 
-Here is a link to the Github Repository : https://github.com/AshvaanSurujbally/Imad_Summative/edit/master/README.md
+Here is a link to the Github Repository : https://github.com/AshvaanSurujbally/Imad_Summative
 
 
 Welcome to the **Music Playlist App**, a app that lets users create a playlist and display them with a bonus rating of the playlist
