@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailscreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/background" />
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="307dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:text="ᴍᴜꜱɪᴄ ᴍᴀɴᴀɢᴇʀ "
+            android:textAlignment="center"
+            android:textColor="#1A9CC3"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDisplayAnswers"
+            android:layout_width="376dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="48dp"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle2" />
+
+        <Button
+            android:id="@+id/btnSongList"
+            android:layout_width="222dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#19FA07"
+            android:text="DIsplay Playlist"
+            android:textColor="#0D0D0D"
+            android:textSize="20sp"
+            app:icon="@android:drawable/ic_search_category_default"
+            app:iconTint="#0D0D0D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDisplayAnswers" />
+
+        <TextView
+            android:id="@+id/tvAverageRating"
+            android:layout_width="199dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="24dp"
+            android:textColor="#040404"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDisplayAnswers" />
+
+        <Button
+            android:id="@+id/btnRating"
+            android:layout_width="189dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#03E8FF"
+            android:text="Average Rating"
+            android:textColor="#0B0B0B"
+            android:textSize="16sp"
+            app:icon="@android:drawable/btn_star"
+            app:iconTint="#0F0E0E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSongList" />
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FB0606"
+            android:text="Return"
+            android:textColor="#070707"
+            android:textSize="20sp"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconTint="#050505"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRating" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
