@@ -36,10 +36,10 @@ class detailscreen : AppCompatActivity() {
         val rating = intent.getStringArrayListExtra("rating")
         val comments = intent.getStringArrayListExtra("comments")
         // i make use of logs to check if the information is being received correctly
-         Log.d("songName", songName.toString())
-         Log.d("artistName", artistName.toString())
-         Log.d("rating", rating.toString())
-         Log.d("comments", comments.toString())
+        Log.d("songName", songName.toString())
+        Log.d("artistName", artistName.toString())
+        Log.d("rating", rating.toString())
+        Log.d("comments", comments.toString())
 
         // now i display the information on the screen in the textview
         // i use a string builder to display the information on the screen
@@ -48,42 +48,50 @@ class detailscreen : AppCompatActivity() {
         // I also used a webiste to asist me in creating this code
         // here you can the link to the website : https://codeql.github.com/codeql-query-help/csharp/cs-stringbuilder-creation-in-loop/
         btnSongList.setOnClickListener {
-          // using a loop to display the information on the screen from the arrays
+            // using a loop to display the information on the screen from the arrays
             val sb = StringBuilder()
             for (i in songName!!.indices) {
-                sb.append("Song Name: ${songName[i]}")
-                sb.append("Artist Name: ${artistName!![i]}")
-                sb.append("Rating: ${rating!![i]}")
-                sb.append("Comments: ${comments!![i]}")
+                sb.append("[Song Name: ${songName[i]}]")
+                sb.append("[Artist Name: ${artistName!![i]}]")
+                sb.append("[Rating: ${rating!![i]}]")
+                sb.append("[Comments: ${comments!![i]}]")
                 sb.append("")
                 tvDisplayAnswers.text = sb.toString()
+                // i make use of logs to check if the information is being displayed correctly
+                Log.d("songName", songName[i])
+                Log.d("artistName", artistName[i])
+                Log.d("rating", rating[i])
+                Log.d("comments", comments[i])
+                Log.d("sb", sb.toString())
             }
-        btnRating.setOnClickListener {
-            // i first set the total to 0 so that it counts for zero to start with
-            // i used a website for a guide line to create this code but never follow exaclty the method they used
-            // here you can find the link to the website : https://www.programiz.com/kotlin-programming/examples/average-arrays
-            var total = 0
-            // now i use a for loop to add all the ratings together
-            for (i in rating!!.indices) {
-                total += rating[i].toInt()
+            btnRating.setOnClickListener {
+                // i first set the total to 0 so that it counts for zero to start with
+                // i used a website for a guide line to create this code but never follow exaclty the method they used
+                // here you can find the link to the website : https://www.programiz.com/kotlin-programming/examples/average-arrays
+                var total = 0
+                // now i use a for loop to add all the ratings together
+                for (i in rating!!.indices) {
+                    total += rating[i].toInt()
+                }
+                //now i calculate the average by dividing the total by the number of ratings and displys it on the screen on the textview
+                val average = total / rating.size
+                tvAverageRating.text = "Average Rating: $average"
             }
-            //now i calculate the average by dividing the total by the number of ratings and displys it on the screen on the textview
-            val average = total / rating.size
-            tvAverageRating.text = "Average Rating: $average"
+            // now i set the return button to go back to the main activity
+
+            btnReturn.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+
+
+                // reference for picture: https://www.canva.com/templates/EAE7FLiMq_4-pink-motivational-music-quote-with-musical-notes-phone-wallpaper/
+            }
+
+
         }
-        // now i set the return button to go back to the main activity
-
-        btnReturn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-
-
-
     }
-
-
-}}}
+}
 
 
 

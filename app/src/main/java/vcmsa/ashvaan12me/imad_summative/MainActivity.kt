@@ -32,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         val btnExitApp = findViewById<Button>(R.id.btnExitApp)
 
         // now i create 4 parallel arrays which take the users data, hold it and display it in the next screen in a string format this will be used in the next screen.
+        // i used infromation from my previous repository and also used a website to guide me in creating the array.
+        //here is the link to the repository:https://github.com/AshvaanSurujbally/2024summativepractice
+        //here is the link to the website: https://kotlinlang.org/docs/arrays.html
         val songTitleArray = ArrayList<String>()
         val artistNameArray = ArrayList<String>()
         val ratingArray = ArrayList<String>()
@@ -68,9 +71,6 @@ class MainActivity : AppCompatActivity() {
                 artistNameArray.add(artistName)
                 ratingArray.add(rating)
                 commentsArray.add(comments)
-
-
-
             }
             // Now i set the next button to go to the next screen without forgetting to added the user inputs in the arrays
             btnNextScreen.setOnClickListener {
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
                 btnExitApp.setOnClickListener {
                     finish()
                 }
-            }
+            }// reference for picture: https://www.canva.com/templates/EAE7FLiMq_4-pink-motivational-music-quote-with-musical-notes-phone-wallpaper/
 
         }
     }
