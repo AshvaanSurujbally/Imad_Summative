@@ -45,6 +45,7 @@ We welcome **feedback and contributions**! If you'd like to:
 
 
 ![Screenshot 2025-06-19 122909](https://github.com/user-attachments/assets/f609728d-effc-407d-a377-a46eb4ffc501)
+
 This is what the user sees upon running the app. The app has a heading along have textboxs and hints that tell the user what to enter in each box.
 The App will not acecept the users inputs without all text fileds being filled and also if the user has not 
 a number between 1-5 for the ratings. The app will prompt the user if these requirements are not met accordingly using the correct methods needed.
@@ -73,6 +74,21 @@ a loop along with stringbuilder to make coding simpilier and easier. Finally if 
 to the mainb screen.
 
 ## Screenshots of code
+![Screenshot 2025-06-19 131845](https://github.com/user-attachments/assets/d362aef3-ba58-48b8-a560-dd33dad7c77b)
+![Screenshot 2025-06-19 131909](https://github.com/user-attachments/assets/ace24e9e-0ae4-4e71-988b-4826f77b8643)
+![Screenshot 2025-06-19 131923](https://github.com/user-attachments/assets/53f5058a-38c0-462a-a44a-6f25badfd486)
+![Screenshot 2025-06-19 131942](https://github.com/user-attachments/assets/55a6fba4-614e-47b6-8497-eb9a71e55107)
+![Screenshot 2025-06-19 131959](https://github.com/user-attachments/assets/c546a618-2079-4ad1-9870-28d1ca97e0aa)
+
+## Main Screen
+
+![Screenshot 2025-06-19 132329](https://github.com/user-attachments/assets/49fda329-3d6e-4625-9faf-31c97a8323f9)
+
+## Detail Screen
+
+![Screenshot 2025-06-19 132338](https://github.com/user-attachments/assets/9f7b5ae8-d985-4795-8f9c-8700235e8bcb)
+
+
 
 
 
